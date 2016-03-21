@@ -1,0 +1,188 @@
+body {
+  font-size: 16px;
+  color: #828181; 
+  font-family: "微软雅黑"}
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  width: 100%;
+  height: 120px;
+  overflow: hidden; }
+  .header div {
+    width: 960px;
+    height: 77px;
+    margin: 0 auto;
+    margin-top: 21.5px;
+    background: url("../img/API-login_logo.png") no-repeat; }
+
+.mid-wrap {
+  width: 100%;
+  height: 440px;
+  background: url("../img/API-login-bg.png") repeat-x;
+  overflow: hidden; }
+
+.mid-container {
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 25px; }
+
+.mid-container-left {
+  width: 514px;
+  height: 374px;
+  float: left;
+  background: url("../img/API-login_banner.png");
+  margin-right: 100px; }
+
+.mid-contanier-right {
+  width: 360px;
+  float: left;
+  border: 5px solid #0076ad;
+  border-radius: 5px;
+  background-color: white; }
+
+form {
+  width: 320px;
+  margin: 0 auto; }
+
+.tips {
+  width: 320px;
+  height: 16px;
+  display: none; }
+
+.form-title {
+  height: 30px;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400; }
+  .form-title .signup {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffde00;
+    float: right;
+    text-decoration: none;
+    vertical-align: center; }
+    .form-title .signup .signup-icon {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background: url("../img/iconfont-qianjin.png") no-repeat; }
+
+.username i {
+  background: url("../img/username-icon.png") center no-repeat; }
+
+.psw i {
+  background: url("../img/psw-icon.png") center no-repeat; }
+
+.username, .psw {
+  position: relative;
+  margin-top: 20px; }
+  .username i, .psw i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px 0 0 2px;
+    background-color: #f3f3f3; }
+  .username input, .psw input {
+    height: 40px;
+    width: 280px;
+    border-radius: 2px;
+    border: 1px solid #d3d3d3;
+    padding-left: 46px;
+    font-size: 16px; }
+
+.quick {
+  width: 320px;
+  height: 16px;
+  margin-top: 20px;
+  color: #6c6c6c;
+  position: relative; }
+  .quick input {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    border-radius: 0; }
+  .quick a {
+    float: right;
+    color: #6c6c6c;
+    text-decoration: none; }
+  .quick label {
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 17px; }
+
+.submit-btn input {
+  width: 320px;
+  height: 40px;
+  background-color: #ffea00;
+  color: white;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 20px; }
+
+.cooperation {
+  width: 320px;
+  height: 70px;
+  margin-bottom: 5px; }
+  .cooperation div {
+    width: 180px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .cooperation ul {
+    width: 180px;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 5px; }
+    .cooperation ul li {
+      width: 32px;
+      height: 32px;
+      margin: 0 14px 0 14px;
+      list-style: none;
+      float: left; }
+    .cooperation ul .weixin-icon {
+      background: url("../img/weixin-icon.png"); }
+    .cooperation ul .qq-icon {
+      background: url("../img/qq-icon.png"); }
+    .cooperation ul .weibo-icon {
+      background: url("../img/weibo-icon.png"); }
+
+footer ul {
+  width: 980px;
+  height: 16px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+footer li {
+  float: left;
+  width: 80px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  text-align: middle;
+  border-right: 1px solid #b1b7d1;
+  list-style: none; }
+footer .last-link-item {
+  border-right: none; }
+footer .copyright {
+  width: 320px;
+  height: 16px;
+  font-size: 12px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=log_style.css.map */
