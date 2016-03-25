@@ -18,9 +18,13 @@
         INSERT INTO `user` (user_name,password,email) values (#{user_name},#{password},#{email})
     </insert>
 
-    <update id="changeUserState" >
-        UPDATE 'user' SET state = #{state} WHERE email = #{email}
+    <update id="changeUserState" parameterType="map">
+        UPDATE `user` SET state = #{state} WHERE email = #{email}
     </update>
+
+    <select id="checkEmail" parameterType="string" resultType="int">
+        SELECT count(*) FROM `user` WHERE email = #{email}
+    </select>
 
 
 </mapper>

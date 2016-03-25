@@ -41,7 +41,7 @@
     </init-param>
     <init-param>
       <param-name>emailAuthAddr</param-name>
-      <param-value>http://localhost:8080</param-value>
+      <param-value>http://localhost:8080/RubicSSO</param-value>
     </init-param>
     <init-param>
       <param-name>mailSmtpAuth</param-name>

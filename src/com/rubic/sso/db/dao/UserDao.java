@@ -1,7 +1,6 @@
 package com.rubic.sso.db.dao;
 
 import com.rubic.sso.po.User;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.Map;
 
@@ -14,6 +13,8 @@ public interface UserDao {
 
     int addUser(Map<String,String> user) throws Exception;
 
-    void changeUserState(@Param("email") String email,@Param("state") int state);
+    void changeUserState(Map<String,Object> parameters);
+
+    int checkEmail(String email);
 
 }
