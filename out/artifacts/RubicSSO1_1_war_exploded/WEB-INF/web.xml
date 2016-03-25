@@ -27,7 +27,47 @@
     <servlet-name>SSOAuth</servlet-name>
     <url-pattern>/SSOAuth</url-pattern>
   </servlet-mapping>
-  
+
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.rubic.sso.servlet.RegisterServlet</servlet-class>
+    <init-param>
+      <param-name>systemEmailAddr</param-name>
+      <param-value>mian_sunshine@163.com</param-value>
+    </init-param>
+    <init-param>
+      <param-name>systemEmailPassword</param-name>
+      <param-value>mian.2016</param-value>
+    </init-param>
+    <init-param>
+      <param-name>emailAuthAddr</param-name>
+      <param-value>http://localhost:8080</param-value>
+    </init-param>
+    <init-param>
+      <param-name>mailSmtpAuth</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>mailSmtpHost</param-name>
+      <param-value>smtp.163.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>authMailServlet</servlet-name>
+    <servlet-class>com.rubic.sso.servlet.AuthMailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>authMailServlet</servlet-name>
+    <url-pattern>/authMail</url-pattern>
+  </servlet-mapping>
+
+
   <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/jsp/404.jsp</location>

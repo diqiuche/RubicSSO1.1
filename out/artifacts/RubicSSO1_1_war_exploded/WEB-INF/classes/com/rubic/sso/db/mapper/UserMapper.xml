@@ -6,12 +6,21 @@
 
     <!--&lt;!&ndash; 一条查询语句 &ndash;&gt;-->
     <!--<select id="selectUserById" parameterType="int" resultType="User">-->
-        <!--select * from userinfo where id = #{id}-->
+    <!--select * from userinfo where id = #{id}-->
     <!--</select>询语句 &ndash;&gt;-->
 
 
     <select id="findUserByEmail" parameterType="string" resultType="User">
-        select * from user where email = #{email}
+        select * from 'user' where email = #{email}
     </select>
+
+    <insert id="addUser" parameterType="map">
+        INSERT INTO `user` (user_name,password,email) values (#{user_name},#{password},#{email})
+    </insert>
+
+    <update id="changeUserState" >
+        UPDATE 'user' SET state = #{state} WHERE email = #{email}
+    </update>
+
 
 </mapper>

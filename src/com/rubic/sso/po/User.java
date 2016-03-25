@@ -9,10 +9,17 @@ public class User {
     private int user_id;
     private String password;
     private String email;
+	private int state;
 
+	public int getState() {
+		return state;
+	}
 
+	public void setState(int state) {
+		this.state = state;
+	}
 
-    public String getUser_name() {
+	public String getUser_name() {
 		return user_name;
 	}
 
@@ -46,8 +53,12 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [user_name=" + user_name + ", user_id=" + user_id
-				+ ", password=" + password + ", email=" + email + "]";
+		return "User{" +
+				"user_name='" + user_name + '\'' +
+				", user_id=" + user_id +
+				", password='" + password + '\'' +
+				", email='" + email + '\'' +
+				", state=" + state +
+				'}';
 	}
-    
 }
