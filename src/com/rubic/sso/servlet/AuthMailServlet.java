@@ -24,6 +24,12 @@ public class AuthMailServlet extends HttpServlet{
     private Log logger = LogFactory.getLog(AuthMailServlet.class);
 
     @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doGet(request, response);
+    }
+
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String registerID = request.getParameter("registerId");
@@ -47,11 +53,6 @@ public class AuthMailServlet extends HttpServlet{
         request.getRequestDispatcher("/jsp/authMailSuccess.jsp").forward(request,response);
     }
 
-    @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        doGet(request, response);
-    }
 
     /**
      * 改变用户账户激活状态，如果已经激活应当抛出异常

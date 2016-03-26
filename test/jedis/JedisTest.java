@@ -32,6 +32,7 @@ public class JedisTest {
 
         for (int i = 0; i < 50; i++) {
             jedis01.set(i+"",i+"");
+            jedis01.expire(i+"",1);
         }
         Jedis jedis02 = JedisUtils.getJedis();
         String value = null;

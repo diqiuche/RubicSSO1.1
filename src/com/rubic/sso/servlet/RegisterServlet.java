@@ -41,6 +41,9 @@ public class RegisterServlet extends HttpServlet {
 
     private String MAIL_SMTP_AUTH;
 
+    //默认的过期时间  1分钟
+    private int EXPIRE = 1 * 60;
+
 
     @Override
     public void init(ServletConfig config) throws ServletException {
@@ -166,6 +169,7 @@ public class RegisterServlet extends HttpServlet {
         //使用redis存储
         Jedis jedis = JedisUtils.getJedis();
         jedis.set(key,value);
+        jedis.expire(key,EXPIRE);
         JedisUtils.returnResource(jedis);
     }
 
