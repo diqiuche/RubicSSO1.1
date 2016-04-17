@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="RubicSSO1.1"
+  id="myeclipse.1459071774517"
+  context-root="/RubicSSO"
+  j2ee-spec="6.0"
+  archive="RubicSSO1.1.war">
+  <attributes>
+    <attribute name="webrootdir" value="web" />
+  </attributes>
+</project-module>
+

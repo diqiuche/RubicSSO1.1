@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="fastjson-1.1.37">
+    <archive path="E:/专业学习/maven/Repository/com/alibaba/fastjson/1.1.37/fastjson-1.1.37.jar" />
+    <archive path="E:/专业学习/maven/Repository/mysql/mysql-connector-java/5.1.22/mysql-connector-java-5.1.22.jar" />
+    <archive path="E:/专业学习/maven/Repository/org/mybatis/mybatis/3.2.7/mybatis-3.2.7.jar" />
+    <archive path="E:/专业学习/maven/Repository/javax/mail/mail/1.4.4/mail-1.4.4.jar" />
+    <archive path="E:/专业学习/maven/Repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar" />
+    <archive path="E:/专业学习/maven/Repository/cglib/cglib/3.1/cglib-3.1.jar" />
+    <archive path="E:/专业学习/maven/Repository/redis/clients/jedis/2.7.3/jedis-2.7.3.jar" />
+  </library>
+  <library name="Python 3.5.0 (D:\Program Files\Python\Python35\python.exe) interpreter library" />
+</eclipse-userlibraries>
+

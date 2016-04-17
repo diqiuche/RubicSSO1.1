@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 给类取别名，否则你必须要用包名加类名来保证类的唯一性 -->
+    <typeAliases>
+        <typeAlias alias="User" type="com.rubic.sso.po.User" />
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <!-- 事务管理类型 -->
+            <transactionManager type="JDBC" />
+            <!-- 数据源 -->
+            <!--<dataSource type="POOLED">-->
+                <!--<property name="driver" value="com.mysql.jdbc.Driver" />-->
+                <!--<property name="url" value="jdbc:mysql://172.22.144.214:3306/rubic" />-->
+                <!--<property name="username" value="root" />-->
+                <!--<property name="password" value="Abcd1234" />-->
+            <!--</dataSource>-->
+
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://172.22.146.251:4342/rubic" />
+                <property name="username" value="root" />
+                <property name="password" value="cqupt2013+" />
+            </dataSource>
+
+        </environment>
+    </environments>
+    <mappers>
+        <!-- 映射文件实现-->
+        <mapper resource="com/rubic/sso/db/mapper/UserMapper.xml" />
+        <!-- 注解实现 -->
+        <!-- <mapper class="com/tony/mapper/UserMapper.java" /> -->
+    </mappers>
+</configuration>

@@ -11,7 +11,7 @@
 
 
     <select id="findUserByEmail" parameterType="string" resultType="User">
-        select * from `user` where email = #{email}
+        select * from 'user' where email = #{email}
     </select>
 
     <insert id="addUser" parameterType="map">
