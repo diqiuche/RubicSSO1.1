@@ -69,7 +69,7 @@ function go(){
 		success:function(data){	
 			if(data.state=="1"){
 				tips.css({"display":"block"}).val(data.err_msg);
-				submitBtn.css({"background":"#ffea00","cursor":"pointer"})
+				submitBtn.css({"background":"#ffea00","cursor":"pointer"}).val("登录");
 			}else{
 				
 				userMsg.action=data.setCookieURL+"?gotoURL="+data.gotoURL+"&expiry="+data.expiry+"&encodedticketKey="+data.encodedticketKey;
